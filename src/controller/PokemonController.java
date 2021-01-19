@@ -59,11 +59,11 @@ public class PokemonController extends HttpServlet {
 			
 			Charizard charizard=new Charizard("Charizard",006,"Charizard is fit and strong and has the ability to soar up to ridiculous heights. With a single breath of fire, it can burn down forests and melt gigantic glaciers.","FIRE","CHARMELEON","240"); 
 			msg = "<center>" + charizard.getPokemonName() + "  #" + charizard.getPokemonNumber();
-			request.setAttribute("message1",msg);
-			request.setAttribute("character1", charizard.getCharacteristics());
-			request.setAttribute("type1",charizard.getType());//getter
-			request.setAttribute("evolution1", charizard.getEvolution());//getter
-			request.setAttribute("baseExp1", charizard.getBaseExp());//getter
+			request.setAttribute("message2",msg);
+			request.setAttribute("character2", charizard.getCharacteristics());
+			request.setAttribute("type2",charizard.getType());//getter
+			request.setAttribute("evolution2", charizard.getEvolution());//getter
+			request.setAttribute("baseExp2", charizard.getBaseExp());//getter
 		}
 
 		if (value3 != null) {
@@ -72,22 +72,22 @@ public class PokemonController extends HttpServlet {
 	  
 			Dragonite dragonite=new Dragonite("Dragonite",149,"Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokémon with human-like intelligence. It shows signs of altruism.","DRAGON","DRATINI","270"); 
 			msg = "<center>" + dragonite.getPokemonName() + "  #" + dragonite.getPokemonNumber();
-			request.setAttribute("message1",msg);
-			request.setAttribute("character1",dragonite.getCharacteristics());
-			request.setAttribute("type1",dragonite.getType());//getter
-			request.setAttribute("evolution1", dragonite.getEvolution());//getter
-			request.setAttribute("baseExp1", dragonite.getBaseExp());//getter
+			request.setAttribute("message3",msg);
+			request.setAttribute("character3",dragonite.getCharacteristics());
+			request.setAttribute("type3",dragonite.getType());//getter
+			request.setAttribute("evolution3", dragonite.getEvolution());//getter
+			request.setAttribute("baseExp3", dragonite.getBaseExp());//getter
 		}
 		if (value4 != null) {
 
 			// Create the object for Mew class and use getters to retrieve the values	
 			Mew mew=new Mew("Mew",151,"Mew is a Psychic-type Mythical Pokémon introduced in Generation I. Mew is notable for its unique ability to learn every Technical Machine, Technical Record & Hidden Machine.","PSYCHIC","NONE","64"); 
 			msg = "<center>" + mew.getPokemonName() + "  #" + mew.getPokemonNumber();
-			request.setAttribute("message1",msg);
-			request.setAttribute("character1", mew.getCharacteristics());
-			request.setAttribute("type1",mew.getType());//getter
-			request.setAttribute("evolution1", mew.getEvolution());//getter
-			request.setAttribute("baseExp1", mew.getBaseExp());//getter		
+			request.setAttribute("message4",msg);
+			request.setAttribute("character4", mew.getCharacteristics());
+			request.setAttribute("type4",mew.getType());//getter
+			request.setAttribute("evolution4", mew.getEvolution());//getter
+			request.setAttribute("baseExp4", mew.getBaseExp());//getter		
 			}
 
 		if (value5 != null) {
@@ -96,11 +96,11 @@ public class PokemonController extends HttpServlet {
 /*getter*/
 			Pikachu pikachu=new Pikachu("Pikachu",25,"Pikachu is an Electric-type Pokémon, which was introduced in Generation I. Over the years, Pikachu has become so popular that it serves as the Pokémon franchise mascot.","ELECTRIC","RAICHU","112");
 			msg = "<center>" + pikachu.getPokemonName() + "  #" + pikachu.getPokemonNumber();
-			request.setAttribute("message1",msg);
-			request.setAttribute("character1", pikachu.getCharacteristics());
-			request.setAttribute("type1",pikachu.getType());//getter
-			request.setAttribute("evolution1", pikachu.getEvolution());//getter
-			request.setAttribute("baseExp1", pikachu.getBaseExp());//getter
+			request.setAttribute("message5",msg);
+			request.setAttribute("character5", pikachu.getCharacteristics());
+			request.setAttribute("type5",pikachu.getType());//getter
+			request.setAttribute("evolution5", pikachu.getEvolution());//getter
+			request.setAttribute("baseExp5", pikachu.getBaseExp());//getter
 			}
 
 		RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/WEB-INF/views/pokemon.jsp");
